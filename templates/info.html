@@ -1,0 +1,45 @@
+{% extends "index.html" %}
+
+{% load static %}
+
+
+{% block content %}
+
+    <div class="container text-left">
+          <div class="p-5 mb-4 mt-4 bg-light rounded-3">
+              <h1>Ingresar Datos Colegio</h1>
+                <form class="" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form }}
+                     <div class="form-group">
+                        <label for="nombreColegio">Nombre</label>
+                        <input name="nombre" type="text" class="form-control" id="nombreColegio" >
+                     </div>
+
+                    <div class="form-group">
+                        <label for="mision">Misión</label>
+                        <input name="mision" type="text" class="form-control" id="mision" >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="vision">Visión</label>
+                        <input name="vision" type="text" class="form-control" id="vision" >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dirección">Dirección</label>
+                        <input name="direccion" type="text" class="form-control" id="direccion" >
+                     </div>
+
+                    <div class="form-group">
+                        <label for="fono">Telefono</label>
+                        <input name="fono" type="text" class="form-control" id="fono" >
+                     </div>
+
+
+                  <button type="submit" class="btn btn-primary mb-4 mt-4">Guardar</button>
+                </form>
+        </div>
+    </div>
+
+{% endblock %}

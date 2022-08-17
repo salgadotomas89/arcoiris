@@ -1,0 +1,65 @@
+{% extends "index.html" %}
+
+{% load static %}
+
+
+{% block content %}
+
+    <div class="container text-left">
+          <div class="p-5 mb-4 mt-4 bg-light rounded-3">
+              <h1>Ingresar Profesor</h1>
+                <form class="" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form }}
+                     <div class="form-group">
+                        <label for="nombreProfesor">Nombre</label>
+                        <input name="nombre" type="text" class="form-control" id="nombreProfesor" >
+                     </div>
+
+                    <div class="form-group">
+                        <label for="apellidoProfesor">Apellido</label>
+                        <input name="apellido" type="text" class="form-control" id="apellidoProfesor" >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="profesion">Profesión</label>
+                        <input name="profesion" type="text" class="form-control" id="profesion" >
+                    </div>
+
+
+                    <div class="form-group mb-4 mt-4">
+                        <select class="form-select" name="ciclo" aria-label="Default select example">
+                          <option selected>Seleccione el ciclo en cual imparte clases</option>
+                          <option value="1">Medio mayor A</option>
+                          <option value="2">Medio mayor B</option>
+                          <option value="3">Transicion 1A</option>
+                            <option value="4">Transicion 1B</option>
+                          <option value="5">Transicion 2A</option>
+                          <option value="6">Transicion 2B</option>
+                          <option value="7">Transicion 2C</option>
+
+                        </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="descripcion">Descripción</label>
+                        <input name="descripcion" type="text" class="form-control" id="descripcion" >
+                     </div>
+
+                    <div class="form-group">
+                        <label for="universidad">Institución educativa</label>
+                        <input name="universidad" type="text" class="form-control" id="universidad" >
+                     </div>
+
+
+                    <div class="form-group mb-4 mt-4">
+                        <input name="foto" type="file" class="form-control-file" >
+                    </div>
+
+                  <button type="submit" class="btn btn-primary mb-4 mt-4">Guardar</button>
+                </form>
+        </div>
+    </div>
+
+{% endblock %}
