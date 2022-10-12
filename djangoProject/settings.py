@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-kqkg^@&cc0@ic4zdks(%n+x&=bb94(kr4g$l&y8qw-#3t4(!wz
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['escuela-arcoiris.herokuapp.com']
+ALLOWED_HOSTS = ['escuela-arcoiris.herokuapp.com', 'web-production-3060.up.railway.app']
 
 
 # Application definition
