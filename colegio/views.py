@@ -200,7 +200,7 @@ def contacto(request):
         email = request.POST.get('email')
         mensaje = request.POST.get('mensaje')
 
-        send_mail("mensaje de la web", mensaje, email, ['altascumbressanclemente@gmail.com'])
+        send_mail("mensaje de arcoiris", mensaje, email, ['altascumbressanclemente@gmail.com'])
 
         return HttpResponse("Gracias por contactarnos")
 
