@@ -67,7 +67,7 @@ WSGI_APPLICATION = 'djangoProject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+            'ENGINE': 'django.db.backends.mysql',
             'NAME': 'escuela3_plataforma',
             'USER': 'escuela3_tomas',
             'PASSWORD': 'dimetunombre',
@@ -76,6 +76,20 @@ DATABASES = {
     }
 }
 
+"""
+
+
+DATABASES = {
+    'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'railway',
+            'USER': 'root',
+            'PASSWORD': 'fq7BPLhc1uF6GKS1d35k',
+            'HOST': 'containers-us-west-109.railway.app',
+            'PORT': '7658',
+    }
+}
+"""
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
